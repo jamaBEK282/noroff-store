@@ -14,8 +14,8 @@ const person: Person = {
 
 const newsletter: Newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
+  title: <>Email orqali bog'lanish </>,
+  description: <>Barcha fikr,xatoliklarni yoki boshqa ishlar boyicha murojaat etishingiz mumkun</>,
 };
 
 const social: Social = [
@@ -39,10 +39,10 @@ const social: Social = [
 ];
 
 const home: Home = {
-  path: "/",
+  path: "/about",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: `${person.name}'s Portfolio`,
+  title: `${person.name}ning Portfoliosi`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
   headline: <>Normatov Jamshid haqida portfolio</>,
   featured: {
