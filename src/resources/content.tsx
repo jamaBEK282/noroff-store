@@ -5,7 +5,7 @@ const person: Person = {
   firstName: "Jamshid",
   lastName: "Normatov",
   name: `Normatov Jamshid`,
-  role: " Grafik dizayner,freelancer",
+  role: " Freelancer va graphics,motion,web designer",
   avatar: "/images/men.jpg",
   email: "normatoff_bro@gmail.com",
   location: "Asia/Tashkent", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
@@ -44,7 +44,7 @@ const home: Home = {
   label: "Home",
   title: `${person.name}ning Portfoliosi`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Normatov Jamshid haqida portfolio</>,
+  headline: <>Normatov Jamshid portfolio</>,
   featured: {
     display: false,
     title: (
@@ -60,7 +60,7 @@ const home: Home = {
   },
   subline: (
     <>
-      Men Jamshidman,va ushbu {"Fiverr,Upwork"} joylarda grafik-dizaynerman
+      Men  {hh.uz} saytida 100+ loyihalarimni bajarganman
     </>
   ),
 };
@@ -86,13 +86,13 @@ const about: About = {
     title: "Tanishtiruv",
     description: (
       <>
-       2020-yildan beri dasturlash va grafik dizaynerlik bilan shug'ullanib kelaman.
+       2020-yildan beri dasturlash va ko'p turli dizaynerlik bilan shug'ullanib kelaman.
       </>
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Ish tajribalarim",
+    title: "Mahoratlar",
     experiences: [
       {
         company: "",
@@ -100,7 +100,7 @@ const about: About = {
         role: "Senior Dasturlovchi",
         achievements: [
           <>
-            Tepada aytib o'tganimdek, 2020-yilda ushbu sohaga qiziqish uygonib uni mukammal o'rganib chiqdm.Fiverr va Upwork saytlarida 20dan ortiq proektlarimni muvaffaqiyatli bajarganman.Portfolio ko'rish uchun bo'limdan "Ishlarim"ga kirib ko'rib chiqishingiz
+            Tepada aytib o'tganimdek, 2020-yilda ushbu sohaga qiziqish uygonib uni mukammal o'rganib chiqdm. HH.uz saytlarida 100dan ortiq proektlarimni muvaffaqiyatli bajarganman.
           </>,
          
         ],
@@ -119,11 +119,7 @@ const about: About = {
         name: "IT CENTER Ferghana",
         description: <>Atiga 4oyda Senior-Professional  ustozlar tomonidan dasturlash darslarini o'qib muammolarsiz website va ilovalar tuzishni o'rganganman.</>,
       },
-      {
-        name: "Farg'ona davlat universiteti akademik litseyi",
-        description: <><>Bu yerda xozir kelajak qurish maqsadida o'qib kelyabman.</><img src="/images/projects/project-01/fardu.jpg" alt="Fardual" width={400} height={400} /></>
-      },
-    ],
+        ],
   },
   technical: {
     display: false, // set to false to hide this section
@@ -159,7 +155,7 @@ const about: About = {
       {
         title: "Next.js",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <></>
         ),
         tags: [
           {
