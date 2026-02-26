@@ -1,6 +1,5 @@
 import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
 import { Line, Logo, Row, Text } from "@once-ui-system/core";
-
 const person: Person = {
   firstName: "Jamshid",
   lastName: "Normatov",
@@ -29,7 +28,7 @@ const social: Social = [
   {
     name: "telegram",
     icon: "telegram",
-    link: "https://t.me/justnormatoff",
+    link: "https://t.me/normatoff",
   },
   {
     name: "Email",
@@ -49,18 +48,17 @@ const home: Home = {
     display: false,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
           Featured work
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work/dizaylarnim bilan tanishing",
   },
   subline: (
     <>
-      Men  {hh.uz} saytida 100+ loyihalarimni bajarganman
+      Men headhunteruz saytida 100+ loyihalarimni muvaffaqiyatli bajarganman
     </>
   ),
 };
@@ -100,7 +98,7 @@ const about: About = {
         role: "Senior Dasturlovchi",
         achievements: [
           <>
-            Tepada aytib o'tganimdek, 2020-yilda ushbu sohaga qiziqish uygonib uni mukammal o'rganib chiqdm. HH.uz saytlarida 100dan ortiq proektlarimni muvaffaqiyatli bajarganman.
+            Tepada aytib o'tganimdek, 2020-yilda ushbu sohaga qiziqish uygonib uni mukammal o'rganib chiqdm. Headhunter,upwork saytlarida 100dan ortiq proektlarimni muvaffaqiyatli bajarganman.
           </>,
          
         ],
@@ -247,6 +245,11 @@ const gallery: Gallery = {
       orientation: "horizontal",
     },
     {
+      src: "/images/gallery/vertical-3.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
+     {
       src: "/images/gallery/vertical-3.jpg",
       alt: "image",
       orientation: "vertical",
