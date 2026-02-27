@@ -1,5 +1,14 @@
+import React from "react";
 import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
 import { Line, Logo, Row, Text } from "@once-ui-system/core";
+
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      [elemName: string]: any;
+    }
+  }
+}
 const person: Person = {
   firstName: "Jamshid",
   lastName: "Normatov",
@@ -58,7 +67,7 @@ const home: Home = {
   },
   subline: (
     <>
-      Men headhunteruz saytida 100+ loyihalarimni muvaffaqiyatli bajarganman
+      Men <a href="https://hh.uz">hh.uz</a> saytda 3yildan buyon kop mijozlar bilan ishlab kelaman.
     </>
   ),
 };
@@ -98,7 +107,7 @@ const about: About = {
         role: "Senior Dasturlovchi",
         achievements: [
           <>
-            Tepada aytib o'tganimdek, 2020-yilda ushbu sohaga qiziqish uygonib uni mukammal o'rganib chiqdm. Headhunter,upwork saytlarida 100dan ortiq proektlarimni muvaffaqiyatli bajarganman.
+            Tepada aytib o'tganimdek, 2020-yilda ushbu sohaga qiziqish uygonib uni mukammal o'rganib chiqdm. Men <a href="https://hh.uz">hh.uz</a> saytda 100ortiq proektlarimni bajarganman.
           </>,
          
         ],
@@ -249,11 +258,7 @@ const gallery: Gallery = {
       alt: "image",
       orientation: "vertical",
     },
-     {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
+
   ],
 };
 
